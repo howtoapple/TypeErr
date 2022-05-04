@@ -13,7 +13,7 @@
     </header>
     <body>            
         <script src="script.js"></script>
-        <div class="navparent" class="plexi">
+        <div class="navparent">
             <div class="navchild">
                 <div href="index.html" class="dropbtn wrld">Type Err
                     <p class="bc">The SBC Blog</p>
@@ -22,32 +22,53 @@
 
                 <div class="dropbtn" onclick="drop()">
                     Authors
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Jakeob</a>
-                        <a href="#">XeonElemental</a>
-                        <a href="#">May</a>
-                    </div>
+                    
                 </div>
                 
                 <div class="dropbtn" onclick="sites()">
                     Sites
 
-                    </div>
                 </div>
                 <div class="dropbtn">About Us</div>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Posts</a>
+                    <a href="#">Authors</a>
+                    <a href="#">Sites</a>
+                    <a href="#">About Us</a>
+                </div>
+
+                <div class="sidebtn" onclick="openNav()">
+                    <svg width="30" height="17" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg"><line  y1="1.25" x2="25" y2="1.25" stroke="white" stroke-width="1.5"></line><line y1="11.25" x2="25" y2="11.25" stroke="white" stroke-width="1.5"></line></svg>
+                </div>
+                <div id="main">
+                    ...
+                </div>
+            </div>
+                
 
 
             </div>
         </div>
-                    <div id="siteDropdown" class="dropdown-content">
+        
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Jakeob</a>
+                        <a href="#">XeonElemental</a>
+                        
+                        <a href="#">May</a>
+                    </div>
+                    <div id="siteDropdown" class="site-content">
                         <a href="#">SBC Home</a>
                         <a href="#">BC Home</a>
                         <a href="#">SG Home</a>
-    <svg id="mobileDropdown" width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line y1="11.25" x2="25" y2="11.25" stroke="black" stroke-width="1.5"></line>
-    <line y1="1.25" x2="25" y2="1.25" stroke="black" stroke-width="1.5"></line>
-</svg>
+                    </div>
 
 
+<script>
+    var b = window.innerWidth;
+    document.write(b);
+
+</script>
     </body>
 </html>
