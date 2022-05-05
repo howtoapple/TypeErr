@@ -11,7 +11,7 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
       }
-    } 
+    }
   }
   function sites() {
     document.getElementById("siteDropdown").classList.toggle("show");
