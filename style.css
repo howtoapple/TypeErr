@@ -4,53 +4,59 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar {
+.navparent {
   background-color: #364652;
+  overflow: hidden;
   color: white;
-  padding: 1px 35px 1px 35px;
+  padding: 0px 35px 0px 35px;
   position: sticky;
-  box-shadow:0px 0px 5px 0px#646464;
-
+  box-shadow:0px 0px 5px 0px #646464;
+}
+.navchild {
+  float:left;
+  width: auto;
 }
 .plexi {
   display:flex;
   flex-wrap:nowrap;
 }
-.wrld{
-  vertical-align: -7px;
+.dropbtn {
+  float: left;
+  background: none;
+  color: white;
+  padding: 0px 16px 0px 16px;
+  margin-top:25px;
+  vertical-align: bottom;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}.dropbtn:hover, .dropbtn:focus {
+    color: #b8b8b8;
+    text-decoration: underline;
+  }
+.wrld {
+  margin:0;
   font-family: 'Fira Code';
   font-size: 35px;
-  color: White;
-  text-decoration: none;
-
 } .wrld:hover {
-  color:#dadada
+  color:#dadada;
+  text-decoration:none;
 }
 .divider {
+  float:left;
   position: relative;
   font-size: 35px;
   padding-left: 30px;
   padding-right: 30px;
-  vertical-align:-15px;
+  margin: 12px;
 }
 .bc {
   font-size: 15px;
-  margin-top: -10px;
+  margin-top: -5px;
+  vertical-align: auto;
 }
 
-.dropbtn {
-  background: none;
-  color: white;
-  padding:16px;
-  font-size: 25px;
-  border: none;
-  cursor: pointer;
-  vertical-align: bottom;
-}
-.dropbtn:hover, .dropbtn:focus {
-    color: #b8b8b8;
-    text-decoration: underline;
-  }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -104,7 +110,7 @@ body {
     color: white;
     padding: 1px 35px 1px 35px;
     position: sticky;
-    box-shadow:0px 0px 5px 0px#646464;
+    box-shadow:0px 0px 5px 0px #646464;
   }
   .wrld {
     font-family: 'Fira Code';
