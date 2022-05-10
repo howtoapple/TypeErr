@@ -125,12 +125,9 @@ body {
     position: sticky;
     box-shadow:0px 0px 5px 0px #646464;
   }
-  .navchild {
-    display:flex;
-  }
-  .dropbtn {
-    display:none;
-  }  
+  .navchild {display:flex;}
+  .dropbtn {display:none;}
+
   .sidebtn {
     margin-left:auto;
     margin-right: 20px;
@@ -146,7 +143,7 @@ body {
     min-width:168px;
     display:contents;
     font-family: 'Fira Code';
-    font-size:35px;
+    font-size:45px;
   } .wrld:hover {
     color: #dadada;
   }
@@ -154,30 +151,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size:15px;
     margin-top: 5px;
-  } .divider {
-    display:none;
-  }
-
-  } 
+  } @media screen and (max-width:380px) {
+    .bc {display: none}} .divider {display:none;}
+ 
  .sidenav {
   float:left;
-  height:100%;
+  margin-top:59px;
+  min-height: 220px;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #364652;
+  opacity:97%;
   overflow-x: hidden;
-  padding-top: 16px;
-  transition: 0.5s;
+  padding-top: 26px;
+  transition: 0.1s;
 }
 
 .sidenav a {
-  padding: 15px 8px 8px 32px;
+  font-family: "Zilla Slab";
+  padding: 15px 0px 8px 16px;
   text-decoration: none;
-  font-size: 18px;
-  color: #818181;
+  font-size: 21px;
+  color: #c9bebe;
   display: block;
   transition: 0.3s;
 }
@@ -193,37 +191,30 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-#main {
-  display:none;
+.accordion {
+  background-color: #364652;
+  font-family: "Zilla Slab";
+  color: #c9bebe;
+  font-size:21px;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
-.dropdown-content {
+.panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  margin-left:330px;
-  margin-top:7px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: 1;
-}
-.site-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 50px;
-  margin-left:5px;
-  margin-top:7px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: 1;
-} .site-content a:hover {background-color:#dadada}
-.site-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  overflow: hidden;
+} #swish {
+  font-size: 40px;
 }
 
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+#main {display:none;}
+.dropdown-content {display: none;}
+.site-content {display: none;}
+}

@@ -32,18 +32,23 @@
                 <div class="dropbtn">About Us</div>
                 
                 <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">Posts</a>
-                    <a onclick="drop()">Authors</a>
-                    <a onclick="sites()">Sites</a>
-                    <a href="#">About Us</a>
+
+                                            
+                    <div class="accordion">Authors</div>
+                        <div class="panel">
+                          <p>Lorem ipsum...</p>
+                        </div>
+                        
+                        <div class="accordion">Sites</div>
+                        <div class="panel">
+                          <p>Lorem ipsum...</p>
+                        </div>
+                    <a href="#">About Us</a> 
                 </div>
 
-                <div class="sidebtn" onclick="openNav()">
-                    <svg width="30" height="17" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg"><line  y1="1.25" x2="25" y2="1.25" stroke="white" stroke-width="1.5"></line><line y1="11.25" x2="25" y2="11.25" stroke="white" stroke-width="1.5"></line></svg>
-                </div>
-                <div id="main">
-                    ...
+                <div id="swish" href="javascript:void(0)" class="sidebtn closebtn" onclick="openNav()">
+                    &equals;
                 </div>
             </div>
                 
@@ -52,20 +57,20 @@
             </div>
         </div>
         
-                    <div id="myDropdown" class="dropdown-content">
-                        <a class="drop" href="#">Jakeob</a>
-                        <a href="#">XeonElemental</a>
-                        
-                        <div class="new">New!
-                        <a class="drop" href="#">May</a>
-                        </div>
-                    </div>
-                    <div id="siteDropdown" class="site-content">
-                        <a href="#">SBC Home</a>
-                        <a href="#">BC Home</a>
-                        <a href="#">SG Home</a>
-                    </div>
-
+        <div id="authorDropdown" class="dropdown-content">
+            <a class="drop" href="#">Jakeob</a>
+            <a href="#">XeonElemental</a>
+            
+            <div class="new">New!
+            <a class="drop" href="#">May</a>
+            </div>
+        </div>
+        <div id="siteDropdown" class="site-content">
+            <a href="#">SBC Home</a>
+            <a href="#">BC Home</a>
+            <a href="#">SG Home</a>
+        </div>
+    
 
 <script>
     var b = window.innerWidth;

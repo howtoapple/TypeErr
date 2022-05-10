@@ -1,5 +1,5 @@
 function drop() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("authorDropdown").classList.toggle("show");
 }
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -11,14 +11,14 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
       }
-    }
+    } 
   }
   function sites() {
     document.getElementById("siteDropdown").classList.toggle("show");
   }
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("site-content");
+      var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -28,10 +28,16 @@ window.onclick = function(event) {
         }
       } 
     }
-
+    
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  var element = document.getElementById('swish')
+  if (element = "=") {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("swish").innerHTML ="×";
+  } else if (element = "×") { //Fix Later!
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("swish").innerHTML= "=";
+  } else {
+    document.write("Hello World!");
+  }
 }
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
