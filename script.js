@@ -43,3 +43,7 @@ function openNav() {
     element = 0;
   }
 }
+
+function responsiveAuth() {
+  
+}

@@ -206,9 +206,9 @@ body {
   transition: 0.4s;
 }
 .panel {
-  padding: 0 18px;
-  background-color: white;
   display: none;
+  padding: 0 28px;
+  background-color:#3c4e5b;
   overflow: hidden;
 } #swish {
   font-size: 40px;
