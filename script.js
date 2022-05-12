@@ -27,17 +27,19 @@ window.onclick = function(event) {
         }
         }
       } 
-    }
-    
+    } 
+
+element=0; 
 function openNav() {
-  var element = document.getElementById('swish')
-  if (element = "=") {
+
+  if (element == 0) {
     document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("swish").innerHTML ="×";
-  } else if (element = "×") { //Fix Later!
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("swish").innerHTML= "=";
-  } else {
-    document.write("Hello World!");
+    document.getElementById('swish').innerHTML = "×";
+    element = 1;
+  } 
+  else if (element == 1) {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById('swish').innerHTML= "=";
+    element = 0;
   }
 }

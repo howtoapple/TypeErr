@@ -135,9 +135,10 @@ body {
     margin-top:7px;
     font-size: 25px;
     border: none;
+    color: white;
     cursor: pointer;
   } .sidebtn:hover {
-    stroke-opacity: 50%;
+    opacity: 70%;
   }
   .wrld {
     min-width:168px;
