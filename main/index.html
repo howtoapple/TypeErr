@@ -15,45 +15,37 @@
         <script src="script.js"></script>
         <div class="navparent">
             <div class="navchild">
-                <div href="index.html" class="dropbtn wrld">Type Err
+                <div href="/main/index.html" class="dropbtn wrld">Type Err
                     <p class="bc">The SBC Blog</p>
                 </div>
                 <div class="divider">|</div>  
 
-                <div class="dropbtn" onclick="drop()">
-                    Authors
-                    
-                </div>
-                
+                <a href="/authors/list.html" class="dropbtn">Authors</a>
+                <a href="/main/about-us.html" class="dropbtn">About Us</a>
+
                 <div class="dropbtn" onclick="sites()">
                     Sites
 
                 </div>
-                <div class="dropbtn">About Us</div>
-                
                 <div id="mySidenav" class="sidenav">
                     <a href="#">Posts</a>
 
                                             
                     <div class="accordion">Authors</div>
                         <div class="panel">
-                          <a>Hello World</a>
-                          <a>Placeholder</a>
-                          <a>Self-Promotion</a>
+                          <p>Lorem ipsum...</p>
                         </div>
                         
-                        <div class="accordion" onclick="responsiveAuth">Sites</div>
+                        <div class="accordion">Sites</div>
                         <div class="panel">
                           <p>Lorem ipsum...</p>
                         </div>
-                    <a href="#">About Us</a> 
+                    <div href="/main/about-us.html">About Us</div> 
                 </div>
 
-                <button href="javascript:void(0)" class="sidebtn closebtn" onclick="openNav()">
-                    <a class="closebtn" id="swish">
-                        &equals;
-                    </a>
-                </button>
+                <div id="swish" href="javascript:void(0)" class="sidebtn closebtn" onclick="openNav()">
+                    &equals;
+                </div>
             </div>
                 
 
@@ -61,14 +53,6 @@
             </div>
         </div>
         
-        <div id="authorDropdown" class="dropdown-content">
-            <a class="drop" href="#">Jakeob</a>
-            <a href="#">XeonElemental</a>
-            
-            <div class="new">New!
-            <a class="drop" href="#">May</a>
-            </div>
-        </div>
         <div id="siteDropdown" class="site-content">
             <a href="#">SBC Home</a>
             <a href="#">BC Home</a>

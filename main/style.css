@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Zilla+Slab&display=swap');
-@media screen and (min-width:668px) {
+@media screen and (min-width:703px) {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +21,7 @@ body {
 .dropbtn {
   float: left;
   background: none;
+  text-decoration:none;
   color: white;
   padding: 0px 16px 0px 16px;
   margin-top:25px;
@@ -59,23 +60,7 @@ body {
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    margin-left:330px;
-    margin-top:7px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    z-index: 1;
-  }
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  } 
+
   .new {
     color: #ff8282;
     font-size:11px;
@@ -89,8 +74,8 @@ body {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    margin-left:450px;
-    margin-top:7px;
+    margin-left:590px;
+    margin-top:-7px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 5px;
     z-index: 1;
@@ -113,7 +98,7 @@ body {
 .show {display:block;} 
 }
 
-@media screen and (max-width:669px){
+@media screen and (max-width:703px){
   
   body {
     margin:auto;
@@ -135,10 +120,9 @@ body {
     margin-top:7px;
     font-size: 25px;
     border: none;
-    color: white;
     cursor: pointer;
   } .sidebtn:hover {
-    opacity: 70%;
+    stroke-opacity: 50%;
   }
   .wrld {
     min-width:168px;
@@ -206,9 +190,9 @@ body {
   transition: 0.4s;
 }
 .panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
-  padding: 0 28px;
-  background-color:#3c4e5b;
   overflow: hidden;
 } #swish {
   font-size: 40px;
@@ -218,4 +202,66 @@ body {
 #main {display:none;}
 .dropdown-content {display: none;}
 .site-content {display: none;}
+}
+
+/*Rory! */
+.cntr-txt {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  color:#e8fdff;
+  text-decoration:none;
+} .cntr-txt:hover {
+  color:#8af7ff;
+} .cntr-txt2 {
+  position:absolute;
+  left:50%;
+  font-size:50px;
+  transform: translate(-50%,-50%);
+}
+.dis-txt {
+  font-size:25px;
+  position:absolute;
+  padding:3px;
+  bottom:5px;
+  color:#7bff00
+}
+.main {
+  height:100vh;
+  background-image: url("rory.bmp");
+  background-size:cover;
+  background-position:center top;
+  position: relative;
+  color:white;
+} 
+.rory-img {
+  max-width:100%;
+  max-height:100%;
+}
+.vertical-line {
+  padding-bottom:100%;
+  padding:20px;
+  border-left: 4px solid #364652;
+  height: 230px;
+}
+.r {
+  font-size:75px;
+  color:#364652;
+  font-family:"Zilla Slab";
+} .r:hover {
+  color:#364652;
+} .sub {
+  color:#646464;
+} .life {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration:underline;
+  color:#e46c4e;
+}
+
+.scrll {
+  font-size:23px;
+  color:#364652;
+  opacity: 10%;
 }
